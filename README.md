@@ -3,7 +3,7 @@ EECS556_code
 
 # Introduction
 There are three parts in `code/` folder:
-_CODE/TOOLS_: 
+..._CODE/TOOLS_: 
 ...`Geometric Context/` `multipleSegmentations/`: Hoiem’s segmentation training and testing codes
 ...`segment/`: Felzenzswalb’s oversegmentation tool
 ...`trainDataGeneration/`: Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
