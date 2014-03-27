@@ -21,8 +21,6 @@ _RESULTS_:
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
 …`get_data_ready`
 ...which will automatically generate original images in `.ppm` format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`.
-```javascript
-> “TODO”: when more than 
 3.  run `mriTrain`, classifiers are learned and stored in `mri_results/train_results`
 ...Parameters that can be changed: 
 ...`train`: training images indicies
