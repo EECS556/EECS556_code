@@ -4,6 +4,7 @@ EECS556_code
 # Introduction
 There are three parts in `code/` folder:
 
+1. First ordered list item
 2. Another item
 ⋅⋅* Unordered sub-list.
 1. **CODE/TOOLS**: 
