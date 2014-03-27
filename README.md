@@ -3,14 +3,14 @@ EECS556_code
 
 # Introduction
 There are three parts in `code/` folder:
-..._CODE/TOOLS_: 
+...**CODE/TOOLS**: 
 ...`Geometric Context/` `multipleSegmentations/`: Hoiem’s segmentation training and testing codes
 ...`segment/`: Felzenzswalb’s oversegmentation tool
 ...`trainDataGeneration/`: Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
-_DATASET_: 
+**DATASET**: 
 ...`Brainweb_MRIDatabase`: MRI dataset
 ...`MSRC_ObjCategImageDatabase_v2`: MSRC dataset (Hoiem used)
-_RESULTS_:
+**RESULTS**:
 ...trained classifiers; test results (accuracy and labeled test images);
 …`mri_results/`: results for MRI dataset
 …`msrc_results/`: results for MSRC dataset
