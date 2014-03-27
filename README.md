@@ -3,6 +3,7 @@ EECS556_code
 
 # Introduction
 There are three parts in `code/` folder:
+
 ...**CODE/TOOLS**: 
 ...`Geometric Context/` `multipleSegmentations/`: Hoiem’s segmentation training and testing codes
 ...`segment/`: Felzenzswalb’s oversegmentation tool
