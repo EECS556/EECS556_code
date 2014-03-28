@@ -28,6 +28,7 @@ There are three parts in `code/` folder:
         >> get_data_ready
  which will automatically generate original images in .ppm format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`. <br />
 3.  Run 
+
         >> mriTrain
     classifiers are learned and stored in `mri_results/train_results`
 4. run 
