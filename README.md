@@ -25,9 +25,12 @@ There are three parts in `code/` folder:
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run <br />
     `get_data_ready` <br /> 
     which will automatically generate original images in .ppm format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`.
-3.  run `mriTrain`, classifiers are learned and stored in `mri_results/train_results`
-...Parameters that can be changed: 
-...`train`: training images indicies
-...‘test’: test iamges indicies
-...‘trainind1’: training images for edge classifer
+3.  Run `mriTrain`, classifiers are learned and stored in `mri_results/train_results` <br /> 
+    Parameters that can be changed: <br /> 
+    `train`: training images indicies <br /> 
+    `test`: test iamges indicies <br /> 
+    `trainind1`: training images for edge classifer <br /> 
+    `sigma`: Used to smooth the input image before segmenting it (0.1) <br />
+    `k`: Value for the threshold function (100) <br /> 
+    `min`: Minimum component size enforced by post-processing (5) 
 4. run `mriTestScript`, test images will be loaded and labeld based on learned classifiers. Test results are stored in `mri_results/test_results`
