@@ -20,10 +20,11 @@ There are three parts in `code/` folder:
  * `msrc_results/` results for MSRC dataset
 
 #Usage
-1. In Matlab, navigate to `EECS556/code`; Run <br />
-```
->> addpath(genpath(‘.’))
-```
+1. In Matlab, navigate to `EECS556/code`; Run
+
+        ```
+        >> addpath(genpath(‘.’))
+        ```
 
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
     ```
