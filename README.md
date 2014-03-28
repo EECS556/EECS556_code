@@ -12,7 +12,7 @@ There are three parts in `code/` folder:
  * `trainDataGeneration/` <br /> 
     Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
 2. **DATASET**
- * `Brainweb_MRIDatabase/` MRI dataset
+ * `Brainweb_MRIDatabase` MRI dataset
  * `MSRC_ObjCategImageDatabase_v2` MSRC dataset (Hoiem used)
 3. **RESULTS** <br /> 
     trained classifiers; test results (accuracy and labeled test images);
