@@ -55,11 +55,13 @@ Parameters that can be tuned: <br />
 		File "./tmpimsp424511.ppm" does not exist.
 	
 		Error in processSuperpixelImage (line 24)
-	    	im = imread(fn{f});
+    		im = imread(fn{f});
 	
 		Error in msCreateSuperpixels (line 12)
 		imsegs = processSuperpixelImage(outfn);
+	try
 	
+	sdf
 	
 
 #Git Clone Repository Instructions
