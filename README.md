@@ -14,7 +14,7 @@ There are three parts in `code/` folder:
 2. **DATASET**
  * `Brainweb_MRIDatabase/`: <br /> 
     MRI dataset
- * `MSRC_ObjCategImageDatabase_v2`: <br />  
+ * `MSRC_ObjCategImageDatabase_v2`: <br /> 
     MSRC dataset (Hoiem used)
 3. **RESULTS**: <br /> 
     trained classifiers; test results (accuracy and labeled test images);
