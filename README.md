@@ -50,15 +50,15 @@ Parameters that can be tuned: <br />
 1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
 
         >> mex treevalc
-2. Complain about image file not exist, such as
+2. Complain about image file not exist, such as 
+
+		File "./tmpimsp424511.ppm" does not exist.
 	
-	File "./tmpimsp424511.ppm" does not exist.
-
-	Error in processSuperpixelImage (line 24)
-    	im = imread(fn{f});
-
-	Error in msCreateSuperpixels (line 12)
-	imsegs = processSuperpixelImage(outfn);
+		Error in processSuperpixelImage (line 24)
+	    	im = imread(fn{f});
+	
+		Error in msCreateSuperpixels (line 12)
+		imsegs = processSuperpixelImage(outfn);
 	
 	
 
