@@ -12,12 +12,12 @@ There are three parts in `code/` folder:
  * `trainDataGeneration/` <br /> 
     Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
 2. **DATASET**
- * `Brainweb_MRIDatabase` MRI dataset
- * `MSRC_ObjCategImageDatabase_v2` MSRC dataset (Hoiem used)
+ * `Brainweb_MRIDatabase`/ MRI dataset
+ * `MSRC_ObjCategImageDatabase_v2/` MSRC dataset (Hoiem used)
 3. **RESULTS** <br /> 
     trained classifiers; test results (accuracy and labeled test images);
- * `mri_results/`: results for MRI dataset
- * `msrc_results/`: results for MSRC dataset
+ * `mri_results/` results for MRI dataset
+ * `msrc_results/` results for MSRC dataset
 
 #Usage
 1. In Matlab, navigate to `EECS556/code`; run
