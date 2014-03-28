@@ -109,6 +109,8 @@ if ~exist('segclassifier', 'var')
     save(fullfile(outdir, 'msSegmentationClassifier.mat'), 'segclassifier');    
 end
 
+mriMh2Img( imsegs(20), labels{20}, smaps{20}, nsegments, outdir );
+
 disp('Training label classifier')
 if ~exist('labelclassifier', 'var')
     traindata = segfeatures(trainind, :);
