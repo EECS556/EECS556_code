@@ -61,7 +61,12 @@ Parameters that can be tuned: <br />
 		imsegs = processSuperpixelImage(outfn);
 	try
 	
-	sdf
+		cd EECS556_code/segment/
+		rm segment
+		make
+	and test whether `segment` works by
+	
+		./segment 0.1 100 5 test_in.ppm test_out.ppm
 	
 
 #Git Clone Repository Instructions
