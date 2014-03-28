@@ -5,11 +5,11 @@ EECS556_code
 There are three parts in `code/` folder:
 
 1. **CODE/TOOLS** 
- * `Geometric Context/` and `multipleSegmentations/`: <br /> 
+ * `Geometric Context/` and `multipleSegmentations/` <br /> 
     Hoiem’s segmentation training and testing codes
- * `segment/`: <br /> 
+ * `segment/` <br /> 
     Felzenzswalb’s oversegmentation tool
- * `trainDataGeneration/`: <br /> 
+ * `trainDataGeneration/` <br /> 
     Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
 2. **DATASET**
  * `Brainweb_MRIDatabase/`: MRI dataset
