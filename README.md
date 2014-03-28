@@ -21,13 +21,13 @@ There are three parts in `code/` folder:
 
 #Usage
 1. In Matlab, navigate to `EECS556/code`; Run
-```javascript
->> addpath(genpath(‘.’))
-```
+    ```
+    >> addpath(genpath(‘.’))
+    ```
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
-```
->> get_data_ready
-```
+    ```
+    >> get_data_ready
+    ```
  which will automatically generate original images in .ppm format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`. <br />
 3.  Run `mriTrain`, classifiers are learned and stored in `mri_results/train_results`
 4. run `mriTestScript`, test images will be loaded and labeld based on learned classifiers. <br />
