@@ -20,7 +20,7 @@ There are three parts in `code/` folder:
  * `msrc_results/` results for MSRC dataset
 
 #Usage
-1. In Matlab, navigate to `EECS556/code`; run <br /> 
+1. In Matlab, navigate to `EECS556/code`; run
 ```
 >> addpath(genpath(‘.’))
 ```
