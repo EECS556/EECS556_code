@@ -20,8 +20,8 @@ There are three parts in `code/` folder:
  * `msrc_results/` results for MSRC dataset
 
 #Usage
-1. In Matlab, navigate to `EECS556/code`; run
-…`addpath(genpath(‘.’))`
+1. In Matlab, navigate to `EECS556/code`; run <br /> 
+    `addpath(genpath(‘.’))`
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
 …`get_data_ready`
 ...which will automatically generate original images in `.ppm` format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`.
