@@ -50,5 +50,21 @@ Parameters that can be tuned: <br />
 1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
 
         >> mex treevalc
-    
-    
+
+#Git Clone Repository Instructions
+If you have not generated any SSH key for github on your machine, please do so following this [tutorial](https://help.github.com/articles/generating-ssh-keys)
+
+1. Create a new folder for the repository you are going to clone, and navigate into the folder, eg
+
+		$  mkdir EECS556_code
+		$  cd EECS556_code/
+2. Set up git
+		
+		$  git remote add origin SSH
+		$  git pull origin master
+	where `SSH` is the SSH clone URL shown on the github repository webpage (near the bottom of the right column, above "Download ZIP").
+3. Push to git
+	After you commit any changes, push to git
+		$  git push origin master
+
+
