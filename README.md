@@ -21,7 +21,7 @@ There are three parts in `code/` folder:
 
 #Usage
 1. In Matlab, navigate to `EECS556/code`; Run
-```
+```javascript
 >> addpath(genpath(‘.’))
 ```
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
