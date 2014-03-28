@@ -21,7 +21,9 @@ There are three parts in `code/` folder:
 
 #Usage
 1. In Matlab, navigate to `EECS556/code`; run <br /> 
+    ```javascript
     `addpath(genpath(‘.’))`
+    ```
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run <br />
     `get_data_ready` <br /> 
     which will automatically generate original images in .ppm format, and ground truth labels `train_data.mat` in folder `Brainweb_MRIDatabase/Images`.
@@ -37,3 +39,7 @@ Parameters that can be tuned: <br />
     `sigma`: Used to smooth the input image before segmenting it (0.1) <br />
     `k`: Value for the threshold function (100) <br /> 
     `min`: Minimum component size enforced by post-processing (5) 
+
+#Troubleshooting
+1. Complain about treevalc, try navigate to Geometric/
+    
