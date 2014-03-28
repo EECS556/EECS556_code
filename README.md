@@ -32,6 +32,7 @@ There are three parts in `code/` folder:
         >> mriTrain
     classifiers are learned and stored in `mri_results/train_results`
 4. run 
+
         >> mriTestScript
     test images will be loaded and labeld based on learned classifiers. <br />
     Test results are stored in `mri_results/test_results`
@@ -46,5 +47,8 @@ Parameters that can be tuned: <br />
     `min`: Minimum component size enforced by post-processing (5) 
 
 #Troubleshooting
-1. Complain about treevalc, try navigate to Geometric/
+1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
+
+        >> mex treevalc
+    
     
