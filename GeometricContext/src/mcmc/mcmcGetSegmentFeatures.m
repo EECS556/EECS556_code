@@ -36,7 +36,7 @@ features = zeros(nsegments, nfeatures);
 yim = imdata.yim;
 xim = imdata.xim;
 gradim = imdata.gradim;
-vpdata = imdata.vpdata;
+%vpdata = imdata.vpdata;
 
 [imh, imw] = size(yim);
 
@@ -112,31 +112,31 @@ for k = 1:nsegments
     nf = 56;    
     
     % vanishing point features
-    region_center = [sorty(ceil(nsmpix/2)) sortx(ceil(nsmpix/2))];  
-    rbounds = [sortx(1) sortx(end) 1-sorty(end) 1-sorty(1)];
-    features(k, nf+(1:16)) = ...
-        APPvp2regionFeatures(spind, vpdata, region_center, rbounds, imsegs);
-    
-    % y-location with respect to estimated horizon
-    if ~isnan(vpdata.hpos)        
-        features(k, nf+17) = features(k, 49) - (1-vpdata.hpos); % bottom 10 pct wrt horizon
-        features(k, nf+18) = features(k, 50) - (1-vpdata.hpos); % top 10 pct wrt horizon
-        % 1 -> completely under horizon, 2-> straddles horizon, 3-> completely above horizon
-        features(k, nf+19) = (features(k, nf+17)>0) + (features(k, nf+18)>0) + 1;
-    else % horizon was not estimated with high confidence
-        features(k, nf+(17:18)) = features(k, [49:50])-0.5;
-        features(k, nf+19) = 4;  % signifies no data-estimated horizon
-    end
-    
-    region_center(1) = region_center(1) - 0.5;
-    region_center(2) = region_center(2) - 0.5;    
-    features(k, nf+(20:38)) = ...
-        APPgetVpFeatures(vpdata.spinfo(spind), vpdata.lines, region_center, [imh imw]);  
+%     region_center = [sorty(ceil(nsmpix/2)) sortx(ceil(nsmpix/2))];  
+%     rbounds = [sortx(1) sortx(end) 1-sorty(end) 1-sorty(1)];
+%     features(k, nf+(1:16)) = ...
+%         APPvp2regionFeatures(spind, vpdata, region_center, rbounds, imsegs);
+%     
+%     % y-location with respect to estimated horizon
+%     if ~isnan(vpdata.hpos)        
+%         features(k, nf+17) = features(k, 49) - (1-vpdata.hpos); % bottom 10 pct wrt horizon
+%         features(k, nf+18) = features(k, 50) - (1-vpdata.hpos); % top 10 pct wrt horizon
+%         % 1 -> completely under horizon, 2-> straddles horizon, 3-> completely above horizon
+%         features(k, nf+19) = (features(k, nf+17)>0) + (features(k, nf+18)>0) + 1;
+%     else % horizon was not estimated with high confidence
+%         features(k, nf+(17:18)) = features(k, [49:50])-0.5;
+%         features(k, nf+19) = 4;  % signifies no data-estimated horizon
+%     end
+%     
+%     region_center(1) = region_center(1) - 0.5;
+%     region_center(2) = region_center(2) - 0.5;    
+%     features(k, nf+(20:38)) = ...
+%         APPgetVpFeatures(vpdata.spinfo(spind), vpdata.lines, region_center, [imh imw]);  
 
     % average superpixel confidences
     if isfield(imdata, 'pvSP')    
-        features(k, nf+(39:41)) = mean(imdata.pvSP(spind, :), 1);
-        features(k, nf+(42:46)) = mean(imdata.phSP(spind, :), 1);
+        features(k, nf+(1:3)) = mean(imdata.pvSP(spind, :), 1);
+        features(k, nf+(4:4+5)) = mean(imdata.phSP(spind, :), 1);
     end
     
 end

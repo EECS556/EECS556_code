@@ -20,7 +20,7 @@ end
 
 
 nimages = numel(imsegs);
-
+test = 20;
 
 % disp('Converting labels to superpixels')
 % if ~exist('splabels_test', 'var')

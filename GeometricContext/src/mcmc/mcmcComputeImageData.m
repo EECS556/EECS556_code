@@ -8,12 +8,12 @@ imdata.xim = repmat([(0:imw-1)/(imw-1)], imh, 1);
 imdata.gradim = sqrt(sum(gx.^2 + gy.^2, 3));
 
 minEdgeLen = sqrt(imh^2+imw^2)*0.02;
-[vpdata.lines, vpdata.spinfo] = ...
-    APPgetLargeConnectedEdges(rgb2gray(im), minEdgeLen, imsegs);
-[vpdata.v, vpdata.vars, vpdata.p, vpdata.hpos] = ...
-    APPestimateVp(vpdata.lines, [imh imw], 0);
-
-imdata.vpdata = vpdata;
+% [vpdata.lines, vpdata.spinfo] = ...
+%     APPgetLargeConnectedEdges(rgb2gray(im), minEdgeLen, imsegs);
+% [vpdata.v, vpdata.vars, vpdata.p, vpdata.hpos] = ...
+%     APPestimateVp(vpdata.lines, [imh imw], 0);
+% 
+% imdata.vpdata = vpdata;
 
 % get pixels in each superpixe
 stats = regionprops(imsegs.segimage, 'PixelIdxList');

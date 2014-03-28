@@ -1,6 +1,6 @@
 % msTrain
 clear all;
-size_of_test = 95;
+size_of_test = 50;
 
 nsegments = [5 7 10 15 20 25 35 50 60 70 80 90 100 Inf]; % number of segments per segmentation
 ncv = 1; % number of cross-validation sets (typically 1)
