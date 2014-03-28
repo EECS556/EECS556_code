@@ -1,5 +1,6 @@
 #GroundTruth Data
 Each image is a labeled MRI image with black being background
+
 | Tissue Class        | Color Code     |
 | ------------------- | --------------:|
 | 1. white matter     | [128   0   0]  |
