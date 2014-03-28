@@ -24,6 +24,7 @@ There are three parts in `code/` folder:
 ```
 >> addpath(genpath(‘.’))
 ```
+
 2. Manually unzip  the `ModelNumber_TissueType.mnc.gz` into `Brainweb_MRIDatabase/WebDownloads`, then run
     ```
     >> get_data_ready
