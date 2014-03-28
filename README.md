@@ -5,17 +5,21 @@ EECS556_code
 There are three parts in `code/` folder:
 
 1. **CODE/TOOLS** 
- * `Geometric Context/` and `multipleSegmentations/`: 
-  <br /> Hoiem’s segmentation training and testing codes
-...`segment/`: Felzenzswalb’s oversegmentation tool
-...`trainDataGeneration/`: Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
-**DATASET**: 
-...`Brainweb_MRIDatabase`: MRI dataset
-...`MSRC_ObjCategImageDatabase_v2`: MSRC dataset (Hoiem used)
-**RESULTS**:
-...trained classifiers; test results (accuracy and labeled test images);
-…`mri_results/`: results for MRI dataset
-…`msrc_results/`: results for MSRC dataset
+ * `Geometric Context/` and `multipleSegmentations/`: <br /> 
+    Hoiem’s segmentation training and testing codes
+ * `segment/`: <br /> 
+    Felzenzswalb’s oversegmentation tool
+ * `trainDataGeneration/`: <br /> 
+    Our own training data aruto-extraction tool given `ModelNumber_TissueType.mnc.gz` from `EECS556/BrainModels`
+2. **DATASET**: 
+ * `Brainweb_MRIDatabase`: <br />  
+    MRI dataset
+ * `MSRC_ObjCategImageDatabase_v2`: <br />  
+    MSRC dataset (Hoiem used)
+3. **RESULTS**: <br /> 
+    trained classifiers; test results (accuracy and labeled test images);
+ * `mri_results/`: results for MRI dataset
+ * `msrc_results/`: results for MSRC dataset
 
 #Usage
 1. In Matlab, navigate to `EECS556/code`; run
