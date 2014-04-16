@@ -78,9 +78,10 @@ If you have not generated any SSH key for github on your machine, please do so f
 
 		$  mkdir EECS556_code
 		$  cd EECS556_code/
+		$  git init
 2. Set up git
 		
-		$  git remote add origin SSH
+		$  git remote add origin *SSH
 		$  git pull origin master
 	where `SSH` is the SSH clone URL shown on the github repository webpage (near the bottom of the right column, above "Download ZIP").
 3. Push to git
