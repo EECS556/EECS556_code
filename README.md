@@ -46,8 +46,11 @@ Parameters that can be tuned: <br />
     `trainind1`: training images for edge classifer <br /> 
     `sigma`: Used to smooth the input image before segmenting it (0.1) <br />
     `k`: Value for the threshold function (100) <br /> 
-    `min`: Minimum component size enforced by post-processing (5) 
-
+    `min`: Minimum component size enforced by post-processing (5) <br /> 
+currently we use <br /> 
+    `ncv=1`: no cross validation
+    `trainind1=half of the training set`
+    
 #Troubleshooting
 1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
 
