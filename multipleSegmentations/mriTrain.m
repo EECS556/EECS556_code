@@ -22,8 +22,8 @@ labels = train_data.labels;
 size_of_training  = length(labels);
 train=1:size_of_training-size_of_test-1; test=size_of_training-size_of_test:size_of_training;
 allind = union(train, test);
-trainind1 = train(1:round(train(end)/2));  
-trainind = train; % use first 40 training images to train segmentations
+trainind1 = train(1:round(train(end)/2));  % use first half training images to train segmentations
+trainind = train; 
 trainind2 = setdiff(trainind, trainind1);
 testind = test;
 save(fullfile(outdir, 'trainTestFn_tu.mat'), 'test');
