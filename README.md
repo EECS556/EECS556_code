@@ -39,6 +39,7 @@ There are three parts in `code/` folder:
 
 #Parameters
 Parameters that can be tuned: <br /> 
+    `ncv`: nvc-fold cross-validation
     `train`: training images indicies <br /> 
     `test`: test iamges indicies <br /> 
     `trainind1`: training images for edge classifer <br /> 
