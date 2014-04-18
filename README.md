@@ -53,7 +53,7 @@ currently we use <br />
     
 #Experiments
  * Cross-tests <br />
-   We have four patterns of bias field (_p1_, _p2_, _p3_, _p4_), and we form train-test pair between any two of _clean_, _p1_, _p2_, _p3_, _p4_, _mixed_. (_mixed_ is the dataset that contains all the images biased by every pattern).
+   We have four patterns of bias field (**_p1_**, _p2_, _p3_, _p4_), and we form train-test pair between any two of _clean_, _p1_, _p2_, _p3_, _p4_, _mixed_. (_mixed_ is the dataset that contains all the images biased by every pattern).
 
  * Feature ablation study <br />
    We have four kinds of features _intensity_, _texture_, _shape_, _location_. And we turn on either feature and compare the performance with the one that utilizes all of them.
