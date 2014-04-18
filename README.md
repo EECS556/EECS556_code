@@ -60,7 +60,9 @@ currently we use <br />
 
 3. Number of multiple hypothesis <br />
    We can try different `nsegments`, i.e. 
- * sfafds
+ * `nsegments` = [different integers from small to large to inf] 
+ * `nsegments` = [different integers from large to inf]
+ * `nsegments` = [several same integers1, several same integers2, ..., inf]
 
 #Troubleshooting
 1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
