@@ -51,6 +51,10 @@ currently we use <br />
     `ncv=1`: no cross validation
     `trainind1=half of the training set`
     
+#Experiments
+ * Cross-testing <br />
+	sdf
+    
 #Troubleshooting
 1. Complain about treevalc, try navigate to `GeometricContext/src/boosting` and then
 
