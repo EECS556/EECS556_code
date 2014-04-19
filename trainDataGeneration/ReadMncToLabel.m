@@ -5,10 +5,11 @@ end
 
 %bias parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%
-ncoil = 1;
+ncoil = 4;
+bias_id = 4;
 ns = [0,0];
-maxs = 1.2;
-mins = 0.3;
+maxs = 1.5;
+mins = 0.2;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -64,15 +65,18 @@ for subindex = 1:nsubjects
             %smap = smap ./ max(max(max(abs(smap))));
             smap_max = max(max(max(abs(smap))));
             smap = mins+smap./smap_max.*(maxs-mins);
-            
-
+            subplot 221;imagesc(abs(smap(:,:,1)));
+            subplot 222;imagesc(abs(smap(:,:,2)));
+            subplot 223;imagesc(abs(smap(:,:,3)));
+            subplot 224;imagesc(abs(smap(:,:,4)));
             bcoilI = ftrue + ns(1) * (randn(size(ftrue)) + 1i * randn(size(ftrue)));
             lcoilI = smap .* repmat(ftrue, [1 1 ncoil]) + ns(2) * ...
                 (randn(size(smap)) + 1i * randn(size(smap)));
             %normalize
-            lcoilI = lcoilI./max(max(max(lcoilI)));
+            %lcoilI = lcoilI./max(max(max(lcoilI)));
            
-            image(:,:,level) = abs(lcoilI(:,:,1));
+            image(:,:,level) = abs(lcoilI(:,:,bias_id));
+            image(:,:,level) = image(:,:,level)./max(max(image(:,:,level)));
         end
 
     end

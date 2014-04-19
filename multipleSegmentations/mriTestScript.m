@@ -6,6 +6,7 @@ ncv = 1; % number of cross-validation sets
 nclasses = 4;
 global test_label_outdir;
 datadir = 'mri_results/train_results';
+classifierdir = 'mri_results/train_results_mix';
 outdir = 'mri_results/test_results';
 test_label_outdir = 'mri_results/test_results';
 
@@ -13,14 +14,15 @@ if LOAD
     load(fullfile(datadir, 'msrc_imsegs.mat'));  %'imsegs'
     load(fullfile(datadir, 'testLabels.mat'));   %'labels' 
     load(fullfile(datadir, 'trainTestFn_tu.mat')); %'test'
-    load(fullfile(datadir, 'msClassifiers.mat'));
+    load(fullfile(datadir, 'msMultipleSegmentations.mat'));  
+    load(fullfile(classifierdir, 'msClassifiers.mat'));
     load(fullfile(datadir, 'msSegmentFeatures.mat'));
-    load(fullfile(datadir, 'msMultipleSegmentations.mat'));    
+     
 end
 
 
 nimages = numel(imsegs);
-test = 20;
+%test = 20;%test a specific image
 
 % disp('Converting labels to superpixels')
 % if ~exist('splabels_test', 'var')
@@ -42,5 +44,6 @@ if ~exist('acc', 'var')
     [acc, cm, classcount] = msAnalyzeResult(imsegs(test), labels(test), pg, 0, []);    
     save(fullfile(outdir, 'msResult_tu_tmp.mat'), 'acc', 'cm', 'pg', 'test', 'classcount');
     disp(['Accuracy: ' num2str(acc)])
-%     showConfusionMatrix(cm, classnames(setdiff(2:24, ignore+1)), 1)
+     %showConfusionMatrix(cm, classnames(setdiff(2:24, ignore+1)), 1);
+     %confusionmat(cm, classnames(setdiff(2:24, ignore+1)), 1);
 end

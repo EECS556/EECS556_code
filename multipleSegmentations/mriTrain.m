@@ -1,8 +1,10 @@
 % msTrain
 clear all;
-size_of_test = 50;
+size_of_test = 51;
 
-nsegments = [5 7 10 15 20 25 35 50 60 70 80 90 100 Inf]; % number of segments per segmentation
+%nsegments = [5 7 10 15 20 25 35 50 60 70 80 90 100 Inf]; % number of segments per segmentation
+%nsegments = [80 90 100 Inf];
+nsegments = [Inf];
 ncv = 1; % number of cross-validation sets (typically 1)
 labeltol = 0.9; % required percentage of single-label pixels for segment to be good (default 0.9)
 nclasses = 3;  % number of categories

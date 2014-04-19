@@ -1,7 +1,7 @@
 mri_imdir = 'Brainweb_MRIDatabase/WebDownloads';
-train_images_imdir = 'Brainweb_MRIDatabase/Images';
+train_images_imdir = 'Brainweb_MRIDatabase/Images_mix';
 train_gt_imdir = 'Brainweb_MRIDatabase/Groundtruth';
-rmfile = ['rm ',pwd,'/',train_images_imdir,'/*ppm'];
+%rmfile = ['rm ',pwd,'/',train_images_imdir,'/*ppm'];
 system(rmfile);
 rmfile = ['rm ',pwd,'/',train_gt_imdir,'/*ppm'];
 system(rmfile);
